@@ -9,7 +9,7 @@ from order import Campaign
 
 campaign_run3_2022_preEE_nano_exo_v12 = Campaign(
     name="run3_2022_preEE_nano_exo_v12",
-    id=320221201,  # 3 2022 12 01(u)
+    id=320221201,  # 3 2022 12 01(u)                                                                                                           
     ecm=13.6,
     bx=25,
     aux={
@@ -18,6 +18,11 @@ campaign_run3_2022_preEE_nano_exo_v12 = Campaign(
         "year": 2022,
         "version": 12,
         "postfix": "",
+        "custom": {
+            "name": "run3_2022_preEE_nano_exo_v12",
+            "creator": "ugent",
+            "location": "davs://maite.iihe.ac.be:2880/pnfs/iihe/cms/store/user/kskovpen/LRSMProd/nanoaod/2022PreEE",
+        },
     },
     tags={"preEE"},
 )
