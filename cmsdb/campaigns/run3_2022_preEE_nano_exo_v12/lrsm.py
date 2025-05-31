@@ -16,8 +16,8 @@ cpn.add_dataset(
     keys=[
         "/lrsm_wr4000n20_ee_nlo_ms",  # noqa
     ],
-    n_files=24,
-    n_events=24000,
+    n_files=22,
+    n_events=22000,
 )
 
 cpn.add_dataset(
