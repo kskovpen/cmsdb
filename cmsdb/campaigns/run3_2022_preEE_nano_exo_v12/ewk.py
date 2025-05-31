@@ -10,7 +10,7 @@ import cmsdb.processes as procs
 from cmsdb.campaigns.run3_2022_preEE_nano_exo_v12 import campaign_run3_2022_preEE_nano_exo_v12 as cpn
 
 cpn.add_dataset(
-    name="w_lnu_4_madgraph",
+    name="w_lnu_4j_madgraph",
     id=14803995,
     processes=[procs.w_lnu_4j],
     keys=[
