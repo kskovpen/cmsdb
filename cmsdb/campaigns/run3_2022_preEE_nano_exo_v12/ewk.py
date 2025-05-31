@@ -14,7 +14,7 @@ cpn.add_dataset(
     id=14803995,
     processes=[procs.w_lnu_4j],
     keys=[
-        "/BackgroundProd/WtoLNu-4Jets_TuneCP5_13p6TeV_madgraphMLM-pythia8",  # noqa
+        "/WtoLNu-4Jets_TuneCP5_13p6TeV_madgraphMLM-pythia8",  # noqa
     ],
     n_files=1152,
     n_events=84739011,
