@@ -39,7 +39,7 @@ __all__ = [
     "w",
     "w_taunu", "w_munu",
     "w_lnu",
-    "w_lnu_0j", "w_lnu_1j", "w_lnu_2j",
+    "w_lnu_0j", "w_lnu_1j", "w_lnu_2j", "w_lnu_4j",
     "w_lnu_ht70to100", "w_lnu_ht100to200", "w_lnu_ht200to400", "w_lnu_ht400to600",
     "w_lnu_ht600to800", "w_lnu_ht800to1200", "w_lnu_ht1200to2500", "w_lnu_ht2500toinf",
     "ewk",
@@ -848,6 +848,20 @@ wp_lnu_xs_13p6 = const.n_leps * Number(12122.5, {
 w_lnu = w.add_process(
     name="w_lnu",
     id=6100,
+    label=rf"{w.label} ($W \rightarrow l\nu$)",
+    xsecs={
+        13: const.n_leps * Number(20508.9, {
+            "scale": (165.7, 88.2),
+            "pdf": 770.9,
+        }),
+        # addition necessary due to absence of combined value
+        13.6: wm_lnu_xs_13p6 + wp_lnu_xs_13p6,
+    },
+)
+
+w_lnu_4j = w.add_process(
+    name="w_lnu_4j",
+    id=61004,
     label=rf"{w.label} ($W \rightarrow l\nu$)",
     xsecs={
         13: const.n_leps * Number(20508.9, {
