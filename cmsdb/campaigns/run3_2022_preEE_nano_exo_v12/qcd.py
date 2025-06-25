@@ -1,0 +1,304 @@
+# coding: utf-8
+
+"""
+QCD datasets for the 2022 pre-EE data-taking campaign (EXO nano)
+"""
+
+import cmsdb.processes as procs
+from cmsdb.campaigns.run3_2022_preEE_nano_exo_v12 import campaign_run3_2022_preEE_nano_exo_v12 as cpn
+
+cpn.add_dataset(
+    name="qcd_pt2400to3200",
+    id=924003200,
+    processes=[procs.qcd_pt2400to3200],
+    info=dict(
+        nominal=DatasetInfo(
+            keys=[
+                "/QCD_PT-2400to3200_TuneCP5_13p6TeV_pythia8",
+            ],
+            n_files=7,
+            n_events=194402,
+        ),
+        extension=DatasetInfo(
+            keys=[
+                "/QCD_PT-2400to3200_TuneCP5_13p6TeV_pythia8_ext1",
+            ],
+            n_files=56,
+            n_events=1914836,
+        ),
+    ),
+)
+
+cpn.add_dataset(
+    name="qcd_pt1800to2400",
+    id=918002400,
+    processes=[procs.qcd_pt1800to2400],
+    info=dict(
+        nominal=DatasetInfo(
+            keys=[
+                "/QCD_PT-1800to2400_TuneCP5_13p6TeV_pythia8",
+            ],
+            n_files=9,
+            n_events=87440,
+        ),
+        extension=DatasetInfo(
+            keys=[
+                "/QCD_PT-1800to2400_TuneCP5_13p6TeV_pythia8_ext1",
+            ],
+            n_files=77,
+            n_events=2896495,
+        ),
+    ),
+)
+
+cpn.add_dataset(
+    name="qcd_pt1400to1800",
+    id=914001800,
+    processes=[procs.qcd_pt1400to1800],
+    info=dict(
+        nominal=DatasetInfo(
+            keys=[
+                "/QCD_PT-1400to1800_TuneCP5_13p6TeV_pythia8",
+            ],
+            n_files=21,
+            n_events=890900,
+        ),
+        extension=DatasetInfo(
+            keys=[
+                "/QCD_PT-1400to1800_TuneCP5_13p6TeV_pythia8_ext1",
+            ],
+            n_files=113,
+            n_events=4788185,
+        ),
+    ),
+)
+
+cpn.add_dataset(
+    name="qcd_pt800to1000",
+    id=98001000,
+    processes=[procs.qcd_pt800to1000],
+    info=dict(
+        nominal=DatasetInfo(
+            keys=[
+                "/QCD_PT-800to1000_TuneCP5_13p6TeV_pythia8",
+            ],
+            n_files=118,
+            n_events=4341793,
+        ),
+        extension=DatasetInfo(
+            keys=[
+                "/QCD_PT-800to1000_TuneCP5_13p6TeV_pythia8_ext1",
+            ],
+            n_files=923,
+            n_events=38300029,
+        ),
+    ),
+)
+
+cpn.add_dataset(
+    name="qcd_pt600to800",
+    id=9600800,
+    processes=[procs.qcd_pt600to800],
+    info=dict(
+        nominal=DatasetInfo(
+            keys=[
+                "/QCD_PT-600to800_TuneCP5_13p6TeV_pythia8",
+            ],
+            n_files=83,
+            n_events=3572796,
+        ),
+        extension=DatasetInfo(
+            keys=[
+                "/QCD_PT-600to800_TuneCP5_13p6TeV_pythia8_ext1",
+            ],
+            n_files=1024,
+            n_events=44130585,
+        ),
+    ),
+)
+
+cpn.add_dataset(
+    name="qcd_pt470to600",
+    id=9470600,
+    processes=[procs.qcd_pt470to600],
+    info=dict(
+        nominal=DatasetInfo(
+            keys=[
+                "/QCD_PT-470to600_TuneCP5_13p6TeV_pythia8",
+            ],
+            n_files=28,
+            n_events=976760,
+        ),
+        extension=DatasetInfo(
+            keys=[
+                "/QCD_PT-470to600_TuneCP5_13p6TeV_pythia8_ext1",
+            ],
+            n_files=648,
+            n_events=27322728,
+        ),
+    ),
+)
+
+cpn.add_dataset(
+    name="qcd_pt300to470",
+    id=9300470,
+    processes=[procs.qcd_pt300to470],
+    info=dict(
+        nominal=DatasetInfo(
+            keys=[
+                "/QCD_PT-300to470_TuneCP5_13p6TeV_pythia8",
+            ],
+            n_files=27,
+            n_events=967072,
+        ),
+        extension=DatasetInfo(
+            keys=[
+                "/QCD_PT-300to470_TuneCP5_13p6TeV_pythia8_ext1",
+            ],
+            n_files=955,
+            n_events=56234463,
+        ),
+    ),
+)
+
+cpn.add_dataset(
+    name="qcd_pt1000to1400",
+    id=910001400,
+    processes=[procs.qcd_pt1000to1400],
+    info=dict(
+        nominal=DatasetInfo(
+            keys=[
+                "/QCD_PT-1000to1400_TuneCP5_13p6TeV_pythia8",
+            ],
+            n_files=51,
+            n_events=2118200,
+        ),
+        extension=DatasetInfo(
+            keys=[
+                "/QCD_PT-1000to1400_TuneCP5_13p6TeV_pythia8_ext1",
+            ],
+            n_files=386,
+            n_events=16545143,
+        ),
+    ),
+)
+
+cpn.add_dataset(
+    name="qcd_pt170to300",
+    id=9170300,
+    processes=[procs.qcd_pt170to300],
+    info=dict(
+        nominal=DatasetInfo(
+            keys=[
+                "/QCD_PT-170to300_TuneCP5_13p6TeV_pythia8",
+            ],
+            n_files=20,
+            n_events=805272,
+        ),
+        extension=DatasetInfo(
+            keys=[
+                "/QCD_PT-170to300_TuneCP5_13p6TeV_pythia8_ext1",
+            ],
+            n_files=529,
+            n_events=28591360,
+        ),
+    ),
+)
+
+cpn.add_dataset(
+    name="qcd_pt80to120",
+    id=980120,
+    processes=[procs.qcd_pt80to120],
+    info=dict(
+        nominal=DatasetInfo(
+            keys=[
+                "/QCD_PT-80to120_TuneCP5_13p6TeV_pythia8",
+            ],
+            n_files=21,
+            n_events=940572,
+        ),
+        extension=DatasetInfo(
+            keys=[
+                "/QCD_PT-80to120_TuneCP5_13p6TeV_pythia8_ext1",
+            ],
+            n_files=410,
+            n_events=29653764,
+        ),
+    ),
+)
+
+cpn.add_dataset(
+    name="qcd_pt30to50",
+    id=93050,
+    processes=[procs.qcd_pt30to50],
+    info=dict(
+        extension=DatasetInfo(
+            keys=[
+                "/QCD_PT-30to50_TuneCP5_13p6TeV_pythia8_ext1",
+            ],
+            n_files=16,
+            n_events=892900,
+        ),
+    ),
+)
+
+cpn.add_dataset(
+    name="qcd_pt50to80",
+    id=95080,
+    processes=[procs.qcd_pt50to80],
+    info=dict(
+        nominal=DatasetInfo(
+            keys=[
+                "/QCD_PT-50to80_TuneCP5_13p6TeV_pythia8",
+            ],
+            n_files=39,
+            n_events=1443095,
+        ),
+        extension=DatasetInfo(
+            keys=[
+                "/QCD_PT-50to80_TuneCP5_13p6TeV_pythia8_ext1",
+            ],
+            n_files=175,
+            n_events=11987534,
+        ),
+    ),
+)
+
+cpn.add_dataset(
+    name="qcd_pt120to170",
+    id=9120170,
+    processes=[procs.qcd_pt120to170],
+    info=dict(
+        nominal=DatasetInfo(
+            keys=[
+                "/QCD_PT-120to170_TuneCP5_13p6TeV_pythia8",
+            ],
+            n_files=30,
+            n_events=1418925,
+        ),
+        extension=DatasetInfo(
+            keys=[
+                "/QCD_PT-120to170_TuneCP5_13p6TeV_pythia8_ext1",
+            ],
+            n_files=495,
+            n_events=28924725,
+        ),
+    ),
+)
+
+cpn.add_dataset(
+    name="qcd_pt15to30",
+    id=91530,
+    processes=[procs.qcd_pt15to30],
+    info=dict(
+        extension=DatasetInfo(
+            keys=[
+                "/QCD_PT-15to30_TuneCP5_13p6TeV_pythia8_ext1",
+            ],
+            n_files=25,
+            n_events=1128600,
+        ),
+    ),
+)
+
+

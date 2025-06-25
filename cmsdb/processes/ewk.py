@@ -22,6 +22,12 @@ __all__ = [
     "dy_m50toinf_2j_pt0to40", "dy_m50toinf_2j_pt40to100", "dy_m50toinf_2j_pt100to200", "dy_m50toinf_2j_pt200to400",
     "dy_m50toinf_2j_pt400to600", "dy_m50toinf_2j_pt600toinf",
     "dy_0j", "dy_1j", "dy_2j",
+    "dy_2e_mll10to50", "dy_2e_mll50to120", "dy_2e_mll120to200", "dy_2e_mll200to400", "dy_2e_mll400to800", "dy_2e_mll800to1500",
+    "dy_2e_mll1500to2500", "dy_2e_mll2500to4000", "dy_2e_mll4000to6000", "dy_2e_mll6000",
+    "dy_2mu_mll10to50", "dy_2mu_mll50to120", "dy_2mu_mll120to200", "dy_2mu_mll200to400", "dy_2mu_mll400to800", "dy_2mu_mll800to1500",
+    "dy_2mu_mll1500to2500", "dy_2mu_mll2500to4000", "dy_2mu_mll4000to6000", "dy_2mu_mll6000",
+    "dy_2tau_mll10to50", "dy_2tau_mll50to120", "dy_2tau_mll120to200", "dy_2tau_mll200to400", "dy_2tau_mll400to800", "dy_2tau_mll800to1500",
+    "dy_2tau_mll1500to2500", "dy_2tau_mll2500to4000", "dy_2tau_mll4000to6000", "dy_2tau_mll6000",
     "dy_m50toinf_ht70to100", "dy_m50toinf_ht100to200", "dy_m50toinf_ht200to400",
     "dy_m50toinf_ht400to600", "dy_m50toinf_ht600to800", "dy_m50toinf_ht800to1200",
     "dy_m50toinf_ht1200to2500", "dy_m50toinf_ht2500toinf",
@@ -1574,3 +1580,371 @@ dyg_zll_mll50toinf_ptg600toinf = dyg.add_process(
         13.6: Number(0.0006773),
     },
 )
+
+# Mll-binned samples
+
+dy_2e_mll10to50 = dy.add_process(
+    name="dy_2e_mll10to50",
+    id=211050,
+    xsecs={
+        13.6: Number(6744.0, {"tot": 1.132}),
+    },
+    aux={
+        "ll": "2e",
+        "mll": (10.0, 50.0),
+    },
+)
+
+dy_2e_mll50to120 = dy.add_process(
+    name="dy_2e_mll50to120",
+    id=2150120,
+    xsecs={
+        13.6: Number(2219.0, {"tot": 0.2327}),
+    },
+    aux={
+        "ll": "2e",
+        "mll": (50.0, 120.0),
+    },
+)
+
+dy_2e_mll120to200 = dy.add_process(
+    name="dy_2e_mll120to200",
+    id=21120200,
+    xsecs={
+        13.6: Number(21.65, {"tot": 0.003184}),
+    },
+    aux={
+        "ll": "2e",
+        "mll": (120.0, 200.0),
+    },
+)
+
+dy_2e_mll200to400 = dy.add_process(
+    name="dy_2e_mll200to400",
+    id=21200400,
+    xsecs={
+        13.6: Number(3.058, {"tot": 0.0004650}),
+    },
+    aux={
+        "ll": "2e",
+        "mll": (200.0, 400.0),
+    },
+)
+
+dy_2e_mll400to800 = dy.add_process(
+    name="dy_2e_mll400to800",
+    id=21400800,
+    xsecs={
+        13.6: Number(0.2691, {"tot": 0.00004215}),
+    },
+    aux={
+        "ll": "2e",
+        "mll": (400.0, 800.0),
+    },
+)
+
+dy_2e_mll800to1500 = dy.add_process(
+    name="dy_2e_mll800to1500",
+    id=218001500,
+    xsecs={
+        13.6: Number(0.01915, {"tot": 3.085e-06}),
+    },
+    aux={
+        "ll": "2e",
+        "mll": (800.0, 1500.0),
+    },
+)
+
+dy_2e_mll1500to2500 = dy.add_process(
+    name="dy_2e_mll1500to2500",
+    id=2115002500,
+    xsecs={
+        13.6: Number(1.111e-03, {"tot": 1.787e-07}),
+    },
+    aux={
+        "ll": "2e",
+        "mll": (1500.0, 2500.0),
+    },
+)
+
+dy_2e_mll2500to4000 = dy.add_process(
+    name="dy_2e_mll2500to4000",
+    id=2125004000,
+    xsecs={
+        13.6: Number(5.949e-05, {"tot": 9.162e-09}),
+    },
+    aux={
+        "ll": "2e",
+        "mll": (2500.0, 4000.0),
+    },
+)
+
+dy_2e_mll4000to6000 = dy.add_process(
+    name="dy_2e_mll4000to6000",
+    id=2140006000,
+    xsecs={
+        13.6: Number(1.558e-06, {"tot": 2.078e-10}),
+    },
+    aux={
+        "ll": "2e",
+        "mll": (4000.0, 6000.0),
+    },
+)
+
+dy_2e_mll6000 = dy.add_process(
+    name="dy_2e_mll6000",
+    id=216000,
+    xsecs={
+        13.6: Number(3.519e-08, {"tot": 6.811e-12}),
+    },
+    aux={
+        "ll": "2e",
+        "mll": (6000.0, 100000.0),
+    },
+)
+
+
+
+dy_2mu_mll10to50 = dy.add_process(
+    name="dy_2mu_mll10to50",
+    id=221050,
+    xsecs={
+        13.6: Number(6744.0, {"tot": 1.132}),
+    },
+    aux={
+        "ll": "2mu",
+        "mll": (10.0, 50.0),
+    },
+)
+
+dy_2mu_mll50to120 = dy.add_process(
+    name="dy_2mu_mll50to120",
+    id=2250120,
+    xsecs={
+        13.6: Number(2219.0, {"tot": 0.2327}),
+    },
+    aux={
+        "ll": "2mu",
+        "mll": (50.0, 120.0),
+    },
+)
+
+dy_2mu_mll120to200 = dy.add_process(
+    name="dy_2mu_mll120to200",
+    id=22120200,
+    xsecs={
+        13.6: Number(21.65, {"tot": 0.003184}),
+    },
+    aux={
+        "ll": "2mu",
+        "mll": (120.0, 200.0),
+    },
+)
+
+dy_2mu_mll200to400 = dy.add_process(
+    name="dy_2mu_mll200to400",
+    id=22200400,
+    xsecs={
+        13.6: Number(3.058, {"tot": 0.0004650}),
+    },
+    aux={
+        "ll": "2mu",
+        "mll": (200.0, 400.0),
+    },
+)
+
+dy_2mu_mll400to800 = dy.add_process(
+    name="dy_2mu_mll400to800",
+    id=22400800,
+    xsecs={
+        13.6: Number(0.2691, {"tot": 0.00004215}),
+    },
+    aux={
+        "ll": "2mu",
+        "mll": (400.0, 800.0),
+    },
+)
+
+dy_2mu_mll800to1500 = dy.add_process(
+    name="dy_2mu_mll800to1500",
+    id=228001500,
+    xsecs={
+        13.6: Number(0.01915, {"tot": 3.085e-06}),
+    },
+    aux={
+        "ll": "2mu",
+        "mll": (800.0, 1500.0),
+    },
+)
+
+dy_2mu_mll1500to2500 = dy.add_process(
+    name="dy_2mu_mll1500to2500",
+    id=2215002500,
+    xsecs={
+        13.6: Number(1.111e-03, {"tot": 1.787e-07}),
+    },
+    aux={
+        "ll": "2mu",
+        "mll": (1500.0, 2500.0),
+    },
+)
+
+dy_2mu_mll2500to4000 = dy.add_process(
+    name="dy_2mu_mll2500to4000",
+    id=2225004000,
+    xsecs={
+        13.6: Number(5.949e-05, {"tot": 9.162e-09}),
+    },
+    aux={
+        "ll": "2mu",
+        "mll": (2500.0, 4000.0),
+    },
+)
+
+dy_2mu_mll4000to6000 = dy.add_process(
+    name="dy_2mu_mll4000to6000",
+    id=2240006000,
+    xsecs={
+        13.6: Number(1.558e-06, {"tot": 2.078e-10}),
+    },
+    aux={
+        "ll": "2mu",
+        "mll": (4000.0, 6000.0),
+    },
+)
+
+dy_2mu_mll6000 = dy.add_process(
+    name="dy_2mu_mll6000",
+    id=226000,
+    xsecs={
+        13.6: Number(3.519e-08, {"tot": 6.811e-12}),
+    },
+    aux={
+        "ll": "2mu",
+        "mll": (6000.0, 100000.0),
+    },
+)
+
+
+
+
+dy_2tau_mll10to50 = dy.add_process(
+    name="dy_2tau_mll10to50",
+    id=231050,
+    xsecs={
+        13.6: Number(6744.0, {"tot": 1.132}),
+    },
+    aux={
+        "ll": "2tau",
+        "mll": (10.0, 50.0),
+    },
+)
+
+dy_2tau_mll50to120 = dy.add_process(
+    name="dy_2tau_mll50to120",
+    id=2350120,
+    xsecs={
+        13.6: Number(2219.0, {"tot": 0.2327}),
+    },
+    aux={
+        "ll": "2tau",
+        "mll": (50.0, 120.0),
+    },
+)
+
+dy_2tau_mll120to200 = dy.add_process(
+    name="dy_2tau_mll120to200",
+    id=23120200,
+    xsecs={
+        13.6: Number(21.65, {"tot": 0.003184}),
+    },
+    aux={
+        "ll": "2tau",
+        "mll": (120.0, 200.0),
+    },
+)
+
+dy_2tau_mll200to400 = dy.add_process(
+    name="dy_2tau_mll200to400",
+    id=23200400,
+    xsecs={
+        13.6: Number(3.058, {"tot": 0.0004650}),
+    },
+    aux={
+        "ll": "2tau",
+        "mll": (200.0, 400.0),
+    },
+)
+
+dy_2tau_mll400to800 = dy.add_process(
+    name="dy_2tau_mll400to800",
+    id=23400800,
+    xsecs={
+        13.6: Number(0.2691, {"tot": 0.00004215}),
+    },
+    aux={
+        "ll": "2tau",
+        "mll": (400.0, 800.0),
+    },
+)
+
+dy_2tau_mll800to1500 = dy.add_process(
+    name="dy_2tau_mll800to1500",
+    id=238001500,
+    xsecs={
+        13.6: Number(0.01915, {"tot": 3.085e-06}),
+    },
+    aux={
+        "ll": "2tau",
+        "mll": (800.0, 1500.0),
+    },
+)
+
+dy_2tau_mll1500to2500 = dy.add_process(
+    name="dy_2tau_mll1500to2500",
+    id=2315002500,
+    xsecs={
+        13.6: Number(1.111e-03, {"tot": 1.787e-07}),
+    },
+    aux={
+        "ll": "2tau",
+        "mll": (1500.0, 2500.0),
+    },
+)
+
+dy_2tau_mll2500to4000 = dy.add_process(
+    name="dy_2tau_mll2500to4000",
+    id=2325004000,
+    xsecs={
+        13.6: Number(5.949e-05, {"tot": 9.162e-09}),
+    },
+    aux={
+        "ll": "2tau",
+        "mll": (2500.0, 4000.0),
+    },
+)
+
+dy_2tau_mll4000to6000 = dy.add_process(
+    name="dy_2tau_mll4000to6000",
+    id=2340006000,
+    xsecs={
+        13.6: Number(1.558e-06, {"tot": 2.078e-10}),
+    },
+    aux={
+        "ll": "2tau",
+        "mll": (4000.0, 6000.0),
+    },
+)
+
+dy_2tau_mll6000 = dy.add_process(
+    name="dy_2tau_mll6000",
+    id=236000,
+    xsecs={
+        13.6: Number(3.519e-08, {"tot": 6.811e-12}),
+    },
+    aux={
+        "ll": "2tau",
+        "mll": (6000.0, 100000.0),
+    },
+)
+
