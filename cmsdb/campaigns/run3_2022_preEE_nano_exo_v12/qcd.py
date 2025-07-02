@@ -6,6 +6,7 @@ QCD datasets for the 2022 pre-EE data-taking campaign (EXO nano)
 
 import cmsdb.processes as procs
 from cmsdb.campaigns.run3_2022_preEE_nano_exo_v12 import campaign_run3_2022_preEE_nano_exo_v12 as cpn
+from order import DatasetInfo
 
 cpn.add_dataset(
     name="qcd_pt2400to3200",
