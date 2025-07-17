@@ -249,12 +249,16 @@ qcd_bgen_ht2000 = qcd.add_process(
 
 # 13 TeV cross sections taken from:
 # https://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS%20AN-2021/015 (v7, p. 11)
+# 13.6 TeV cross sections taken from 
+# https://xsecdb-xsdb-official.app.cern.ch/xsdb/?columns=67108863&currentPage=0&pageSize=10&searchQuery=DAS%3DQCD_PT-80to120_TuneCP5_13p6TeV_pythia8
+# using the names of the directories
 
 qcd_pt15to30 = qcd.add_process(
     name="qcd_pt15to30",
     id=31901,
     xsecs={
         13: Number(1821000000),
+        13.6: Number(1301000000),
     },
 )
 
@@ -263,6 +267,7 @@ qcd_pt30to50 = qcd.add_process(
     id=31902,
     xsecs={
         13: Number(138800000),
+        13.6: Number(113300000.0),
     },
 )
 
@@ -271,6 +276,7 @@ qcd_pt50to80 = qcd.add_process(
     id=31903,
     xsecs={
         13: Number(19110000),
+        13.6: Number(16760000),
     },
 )
 
@@ -279,6 +285,7 @@ qcd_pt80to120 = qcd.add_process(
     id=31904,
     xsecs={
         13: Number(2735000),
+        13.6: Number(2534000.0),
     },
 )
 
@@ -287,6 +294,7 @@ qcd_pt120to170 = qcd.add_process(
     id=31905,
     xsecs={
         13: Number(466200),
+        13.6: Number(445800.0),
     },
 )
 
@@ -295,6 +303,7 @@ qcd_pt170to300 = qcd.add_process(
     id=31906,
     xsecs={
         13: Number(117200),
+        13.6: Number(113700.0),
     },
 )
 
@@ -303,6 +312,7 @@ qcd_pt300to470 = qcd.add_process(
     id=31907,
     xsecs={
         13: Number(7763),
+        13.6: Number(7559.0),
     },
 )
 
@@ -311,6 +321,7 @@ qcd_pt470to600 = qcd.add_process(
     id=31908,
     xsecs={
         13: Number(641),
+        13.6: Number(626.4),
     },
 )
 
@@ -319,6 +330,7 @@ qcd_pt600to800 = qcd.add_process(
     id=31909,
     xsecs={
         13: Number(185.7),
+        13.6: Number(178.6),
     },
 )
 
@@ -327,6 +339,7 @@ qcd_pt800to1000 = qcd.add_process(
     id=31910,
     xsecs={
         13: Number(32.02),
+        13.6: Number(30.57),
     },
 )
 
@@ -335,6 +348,7 @@ qcd_pt1000to1400 = qcd.add_process(
     id=31911,
     xsecs={
         13: Number(9.375),
+        13.6: Number(8.92),
     },
 )
 
@@ -343,6 +357,7 @@ qcd_pt1400to1800 = qcd.add_process(
     id=31912,
     xsecs={
         13: Number(0.8384),
+        13.6: Number(0.8103),
     },
 )
 
@@ -351,6 +366,7 @@ qcd_pt1800to2400 = qcd.add_process(
     id=31913,
     xsecs={
         13: Number(0.1133),
+        13.6: Number(0.1148),
     },
 )
 
@@ -359,6 +375,7 @@ qcd_pt2400to3200 = qcd.add_process(
     id=31914,
     xsecs={
         13: Number(0.006746),
+        13.6: Number(0.007542),
     },
 )
 

@@ -233,7 +233,7 @@ cpn.add_dataset(
     id=93050,
     processes=[procs.qcd_pt30to50],
     info=dict(
-        extension=DatasetInfo(
+        nominal=DatasetInfo( # in principle it is an extension but it is not working properly like this (it needs a nominal)
             keys=[
                 "/QCD_PT-30to50_TuneCP5_13p6TeV_pythia8_ext1",
             ],
@@ -292,7 +292,7 @@ cpn.add_dataset(
     id=91530,
     processes=[procs.qcd_pt15to30],
     info=dict(
-        extension=DatasetInfo(
+        nominal=DatasetInfo( # in principle it is an extension but it is not working properly like this (it needs a nominal)
             keys=[
                 "/QCD_PT-15to30_TuneCP5_13p6TeV_pythia8_ext1",
             ],
