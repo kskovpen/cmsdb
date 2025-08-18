@@ -76,7 +76,7 @@ cpn.add_dataset(name="lrsm_wr5000n20_mm", id=5000204, processes=[procs.lrsm_wr50
 cpn.add_dataset(name="lrsm_wr5000n30_ee", id=5000301, processes=[procs.lrsm_wr5000n30_ee], keys=["/lrsm_wr5000n30_ee_nlo_ms",], n_files=25, n_events=25000,)
 cpn.add_dataset(name="lrsm_wr5000n30_em", id=5000302, processes=[procs.lrsm_wr5000n30_em], keys=["/lrsm_wr5000n30_em_nlo_ms",], n_files=25, n_events=25000,)
 cpn.add_dataset(name="lrsm_wr5000n30_me", id=5000303, processes=[procs.lrsm_wr5000n30_me], keys=["/lrsm_wr5000n30_me_nlo_ms",], n_files=25, n_events=25000,)
-cpn.add_dataset(name="lrsm_wr5000n30_mm", id=5000304, processes=[procs.lrsm_wr5000n30_em], keys=["/lrsm_wr5000n30_mm_nlo_ms",], n_files=24, n_events=24000,)
+cpn.add_dataset(name="lrsm_wr5000n30_mm", id=5000304, processes=[procs.lrsm_wr5000n30_mm], keys=["/lrsm_wr5000n30_mm_nlo_ms",], n_files=24, n_events=24000,)
 
 cpn.add_dataset(name="lrsm_wr5000n40_ee", id=5000401, processes=[procs.lrsm_wr5000n40_ee], keys=["/lrsm_wr5000n40_ee_nlo_ms",], n_files=25, n_events=25000,)
 cpn.add_dataset(name="lrsm_wr5000n40_em", id=5000402, processes=[procs.lrsm_wr5000n40_em], keys=["/lrsm_wr5000n40_em_nlo_ms",], n_files=25, n_events=25000,)
