@@ -46,7 +46,7 @@ from cmsdb.util import multiply_xsecs
 # https://twiki.cern.ch/twiki/bin/view/CMS/TopMonteCarloSystematics?rev=7#mtop
 #
 
-
+# cross section is given in pb
 tt = Process(
     name="tt",
     id=1000,

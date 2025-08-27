@@ -867,7 +867,7 @@ w_lnu = w.add_process(
 
 w_lnu_4j = w.add_process(
     name="w_lnu_4j",
-    id=61004,
+    id=61004, # FIXME THERE WAS NO ERRRO BUT THIS SHOULD BE CAHNGED SINCE IT COINCIDES WITH ANOTHER PROCESS
     label=rf"{w.label} ($W \rightarrow l\nu$)",
     xsecs={
         13: const.n_leps * Number(20508.9, {
@@ -1645,7 +1645,7 @@ dy_2e_mll400to800 = dy.add_process(
 
 dy_2e_mll800to1500 = dy.add_process(
     name="dy_2e_mll800to1500",
-    id=218001500,
+    id=21800150,
     xsecs={
         13.6: Number(0.01915, {"tot": 3.085e-06}),
     },
@@ -1657,7 +1657,7 @@ dy_2e_mll800to1500 = dy.add_process(
 
 dy_2e_mll1500to2500 = dy.add_process(
     name="dy_2e_mll1500to2500",
-    id=2115002500,
+    id=21150250,
     xsecs={
         13.6: Number(1.111e-03, {"tot": 1.787e-07}),
     },
@@ -1669,7 +1669,7 @@ dy_2e_mll1500to2500 = dy.add_process(
 
 dy_2e_mll2500to4000 = dy.add_process(
     name="dy_2e_mll2500to4000",
-    id=2125004000,
+    id=21250400,
     xsecs={
         13.6: Number(5.949e-05, {"tot": 9.162e-09}),
     },
@@ -1681,7 +1681,7 @@ dy_2e_mll2500to4000 = dy.add_process(
 
 dy_2e_mll4000to6000 = dy.add_process(
     name="dy_2e_mll4000to6000",
-    id=2140006000,
+    id=21400600,
     xsecs={
         13.6: Number(1.558e-06, {"tot": 2.078e-10}),
     },
@@ -1767,7 +1767,7 @@ dy_2mu_mll400to800 = dy.add_process(
 
 dy_2mu_mll800to1500 = dy.add_process(
     name="dy_2mu_mll800to1500",
-    id=228001500,
+    id=22800150,
     xsecs={
         13.6: Number(0.01915, {"tot": 3.085e-06}),
     },
@@ -1779,7 +1779,7 @@ dy_2mu_mll800to1500 = dy.add_process(
 
 dy_2mu_mll1500to2500 = dy.add_process(
     name="dy_2mu_mll1500to2500",
-    id=2215002500,
+    id=22150250,
     xsecs={
         13.6: Number(1.111e-03, {"tot": 1.787e-07}),
     },
@@ -1791,7 +1791,7 @@ dy_2mu_mll1500to2500 = dy.add_process(
 
 dy_2mu_mll2500to4000 = dy.add_process(
     name="dy_2mu_mll2500to4000",
-    id=2225004000,
+    id=22250400,
     xsecs={
         13.6: Number(5.949e-05, {"tot": 9.162e-09}),
     },
@@ -1803,7 +1803,7 @@ dy_2mu_mll2500to4000 = dy.add_process(
 
 dy_2mu_mll4000to6000 = dy.add_process(
     name="dy_2mu_mll4000to6000",
-    id=2240006000,
+    id=22400600,
     xsecs={
         13.6: Number(1.558e-06, {"tot": 2.078e-10}),
     },
@@ -1890,7 +1890,7 @@ dy_2tau_mll400to800 = dy.add_process(
 
 dy_2tau_mll800to1500 = dy.add_process(
     name="dy_2tau_mll800to1500",
-    id=238001500,
+    id=23800150,
     xsecs={
         13.6: Number(0.01915, {"tot": 3.085e-06}),
     },
@@ -1902,7 +1902,7 @@ dy_2tau_mll800to1500 = dy.add_process(
 
 dy_2tau_mll1500to2500 = dy.add_process(
     name="dy_2tau_mll1500to2500",
-    id=2315002500,
+    id=23150250,
     xsecs={
         13.6: Number(1.111e-03, {"tot": 1.787e-07}),
     },
@@ -1914,7 +1914,7 @@ dy_2tau_mll1500to2500 = dy.add_process(
 
 dy_2tau_mll2500to4000 = dy.add_process(
     name="dy_2tau_mll2500to4000",
-    id=2325004000,
+    id=23250400,
     xsecs={
         13.6: Number(5.949e-05, {"tot": 9.162e-09}),
     },
@@ -1926,7 +1926,7 @@ dy_2tau_mll2500to4000 = dy.add_process(
 
 dy_2tau_mll4000to6000 = dy.add_process(
     name="dy_2tau_mll4000to6000",
-    id=2340006000,
+    id=23400600,
     xsecs={
         13.6: Number(1.558e-06, {"tot": 2.078e-10}),
     },
