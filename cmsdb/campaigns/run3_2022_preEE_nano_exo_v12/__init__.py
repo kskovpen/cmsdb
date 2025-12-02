@@ -33,3 +33,5 @@ import cmsdb.campaigns.run3_2022_preEE_nano_exo_v12.ewk  # noqa
 import cmsdb.campaigns.run3_2022_preEE_nano_exo_v12.lrsm  # noqa
 import cmsdb.campaigns.run3_2022_preEE_nano_exo_v12.qcd  # noqa
 import cmsdb.campaigns.run3_2022_preEE_nano_exo_v12.top  # noqa
+import cmsdb.campaigns.run3_2022_preEE_nano_exo_v12.data  # noqa
+import cmsdb.campaigns.run3_2022_preEE_nano_exo_v12.heavyn  # noqa

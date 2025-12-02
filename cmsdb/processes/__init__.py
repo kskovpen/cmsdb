@@ -17,3 +17,4 @@ from cmsdb.processes.mttbar import *  # noqa
 from cmsdb.processes.azh import *  # noqa
 from cmsdb.processes.hhh import *  # noqa
 from cmsdb.processes.lrsm import *  # noqa
+from cmsdb.processes.heavyn import *  # noqa
