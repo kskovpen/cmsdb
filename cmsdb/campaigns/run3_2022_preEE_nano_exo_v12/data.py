@@ -31,6 +31,7 @@ cpn.add_dataset(
 
 # PRE-EE
 
+# NOTE FIXME there is mu and there is singlemu in the other datasets, should both be consdiered? (?!)
 cpn.add_dataset(
     name="data_singlemu_c",
     id=14784105,
@@ -82,5 +83,6 @@ cpn.add_dataset(
     n_events=263689151, #? FIXME: i assume it should be the same as in "non-processed" dataset
     aux={
         "era": "C",
+        "jec_era": "RunCD",
     },
 )
